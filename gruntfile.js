@@ -15,6 +15,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
 		watch:{
 			options:{livereload:true},
 			coffee:{
@@ -24,7 +25,11 @@ module.exports = function(grunt) {
 			less:{
 				files:'less/*.less',
 				tasks:'less'
-			}			
+			},
+			html: {
+        files: './index.html',
+		    tasks:true
+      }
 		},
 		connect:{
 			server:{
